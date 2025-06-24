@@ -11,16 +11,28 @@
     <h1>Vikingo Gym</h1>
     <nav>
       <a href="#bienvenida">Inicio</a>
+      <a href="#planes">Planes</a>
       <a href="#galeria">Galería</a>
       <a href="#entrenadores">Entrenadores</a>
-      <a href="#videos">Videos</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#faq">FAQ</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <section id="bienvenida">
     <h2>Bienvenido</h2>
-    <p>Transforma tu cuerpo con nosotros. Vive fuerte, entrena con pasión.</p>
+    <p>Transforma tu cuerpo con nosotros. Vive fuerte, entrena con pasión. Somos el gimnasio más completo de la ciudad, con atención personalizada y resultados reales.</p>
+  </section>
+
+  <section id="planes">
+    <h2>Planes de Entrenamiento</h2>
+    <table>
+      <tr><th>Plan</th><th>Precio</th><th>Duración</th><th>Incluye</th></tr>
+      <tr><td>Básico</td><td>$80.000</td><td>1 mes</td><td>Acceso total + clases grupales</td></tr>
+      <tr><td>Plus</td><td>$200.000</td><td>3 meses</td><td>Todo lo anterior + asesoría nutricional</td></tr>
+      <tr><td>Élite</td><td>$350.000</td><td>3 meses</td><td>Plan personalizado + entrenador personal</td></tr>
+    </table>
   </section>
 
   <section id="galeria" class="galeria">
@@ -35,56 +47,43 @@
     <div class="entrenador">
       <img src="https://images.unsplash.com/photo-1600180758890-6d3bbf8fcd4f" alt="Entrenador 1">
       <h3>Pedro “El Vikingo”</h3>
-      <p>Especialista en fuerza y resistencia.</p>
+      <p>Entrenador en fuerza y levantamiento olímpico. 10 años de experiencia.</p>
     </div>
     <div class="entrenador">
       <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba" alt="Entrenadora 2">
       <h3>Laura Fit</h3>
-      <p>Coach en entrenamiento funcional.</p>
+      <p>Especialista en tonificación, cardio y nutrición deportiva.</p>
     </div>
   </section>
 
-  <section id="videos" class="videos">
-    <h2>Videos Motivacionales</h2>
-    <iframe src="https://www.youtube.com/embed/2vjPBrBU-TM" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/UoC_O3HzsH0" allowfullscreen></iframe>
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <blockquote>"Gracias a Vikingo Gym bajé 12 kilos en 3 meses. ¡Volví a amarme!" — <strong>María G.</strong></blockquote>
+    <blockquote>"El mejor ambiente para entrenar. Me siento como en familia." — <strong>Carlos T.</strong></blockquote>
+    <blockquote>"Los entrenadores son unos cracks. Aprendí más aquí en 2 meses que en años por mi cuenta." — <strong>Andrés V.</strong></blockquote>
+  </section>
+
+  <section id="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <p><strong>¿Qué necesito para inscribirme?</strong><br>Sólo tu cédula, ropa deportiva y muchas ganas.</p>
+    <p><strong>¿Puedo entrenar sin experiencia?</strong><br>¡Claro! Tenemos planes desde principiantes hasta avanzados.</p>
+    <p><strong>¿Tienen duchas y parqueadero?</strong><br>Sí, contamos con duchas, lockers y parqueadero gratuito.</p>
   </section>
 
   <section id="contacto">
     <h2>Contáctanos</h2>
     <p><strong>WhatsApp:</strong> <a href="https://wa.me/573013847703" target="_blank">+57 301 384 7703</a></p>
     <p><strong>Correo:</strong> <a href="mailto:jorgeguilloud@gmail.com">jorgeguilloud@gmail.com</a></p>
-    <form onsubmit="enviarWhatsApp(event)">
-      <input type="text" id="nombre" placeholder="Tu nombre" required>
-      <input type="email" id="correo" placeholder="Tu correo electrónico" required>
-      <select id="motivo" required>
-        <option value="">Selecciona un motivo</option>
-        <option value="información">Información</option>
-        <option value="inscripción">Inscripción</option>
-        <option value="entrenador">Entrenador personal</option>
-      </select>
-      <button type="submit">Enviar mensaje por WhatsApp</button>
-    </form>
+    <p><strong>Dirección:</strong> Calle 123 #45-67, Palmira, Valle del Cauca</p>
+    <iframe src="https://maps.google.com/maps?q=calle%20123%2045-67%20palmira&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen></iframe>
   </section>
 
   <footer>
     <p>&copy; 2025 Vikingo Gym — Todos los derechos reservados</p>
   </footer>
 
-  <!-- Botón de WhatsApp -->
   <a href="https://wa.me/573013847703" class="whatsapp-button" target="_blank" title="Escríbenos por WhatsApp">💬</a>
 
-  <!-- Script para enviar datos del formulario a WhatsApp -->
-  <script>
-  function enviarWhatsApp(event) {
-    event.preventDefault();
-    const nombre = document.getElementById("nombre").value;
-    const correo = document.getElementById("correo").value;
-    const motivo = document.getElementById("motivo").value;
-    const mensaje = \`Hola, soy \${nombre}. Mi correo es \${correo} y quiero información sobre: \${motivo}.\`;
-    const url = \`https://wa.me/573013847703?text=\${encodeURIComponent(mensaje)}\`;
-    window.open(url, '_blank');
-  }
-  </script>
 </body>
 </html>
+
