@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vikingo Gym</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Chatbot Tawk.to -->
   <script type="text/javascript">
-  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-  (function() {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/64c99eeb94cf5d49dc6a7b7a/1h7jsuobk';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-  })();
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/64c99eeb94cf5d49dc6a7b7a/1h7jsuobk';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
   </script>
 </head>
 <body>
-  <header>
-    <h1>Vikingo Gym</h1>
-    <nav>
-      <a href="#bienvenida">Inicio</a>
-      <a href="#planes">Planes</a>
-      <a href="#galeria">Galería</a>
-      <a href="#entrenadores">Entrenadores</a>
-      <a href="#consejos">Consejos</a>
-      <a href="#testimonios">Testimonios</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>VIKINGO GYM</h1>
+      <p>Fuerza. Disciplina. Transformación.</p>
+      <a href="#contacto" class="btn">Únete Ahora</a>
+    </div>
   </header>
 
-  <section id="bienvenida">
-    <h2>Bienvenido</h2>
-    <p>Transforma tu cuerpo con nosotros. Vive fuerte, entrena con pasión.</p>
-  </section>
+  <nav class="main-nav">
+    <a href="#planes">Planes</a>
+    <a href="#galeria">Galería</a>
+    <a href="#entrenadores">Entrenadores</a>
+    <a href="#consejos">Consejos</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
   <section id="planes">
     <h2>Planes de Entrenamiento</h2>
@@ -100,27 +99,6 @@
       <h3>Síguenos</h3>
       <a href="https://instagram.com" target="_blank">Instagram</a> |
       <a href="https://tiktok.com" target="_blank">TikTok</a> |
-      <a href="https://youtube.com" target="_blank">YouTube</a>
-    </div>
-  </section>
+      <a href="https:
 
-  <footer>
-    <p>&copy; 2025 Vikingo Gym. Todos los derechos reservados.</p>
-  </footer>
-
-  <a href="https://wa.me/573013847703" class="whatsapp-button" target="_blank" title="Escríbenos por WhatsApp">💬</a>
-
-  <script>
-  const elementos = document.querySelectorAll("section, .entrenador, .galeria img");
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, { threshold: 0.1 });
-  elementos.forEach(el => observer.observe(el));
-  </script>
-</body>
-</html>
 
