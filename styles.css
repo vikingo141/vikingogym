@@ -1,31 +1,74 @@
+/* General */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #111;
   color: #fff;
+  line-height: 1.6;
 }
-header {
-  background-color: #000;
-  padding: 20px;
+
+/* Hero principal */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1583454110551-d1f7f4c46a1e?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding-top: 20vh;
+}
+.hero-overlay h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin-bottom: 0.5em;
+}
+.hero-overlay p {
+  font-size: 1.3em;
+  margin-bottom: 1.2em;
+}
+.hero-overlay .btn {
+  background: #f0b400;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.hero-overlay .btn:hover {
+  background: #ffc400;
+}
+
+/* Menú de navegación */
+.main-nav {
+  background: #000;
+  padding: 15px;
   text-align: center;
 }
-header h1 {
-  font-size: 2.5em;
-  margin: 0;
-}
-nav a {
+.main-nav a {
   color: #f0b400;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
+.main-nav a:hover {
+  color: #fff;
+}
+
+/* Secciones */
 section {
-  padding: 40px 20px;
-  margin: 20px;
-  background: rgba(0,0,0,0.7);
-  border-radius: 10px;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(40px);
   transition: all 0.6s ease;
 }
 section.visible {
@@ -33,24 +76,32 @@ section.visible {
   transform: translateY(0);
 }
 h2 {
+  text-align: center;
   color: #f0b400;
+  margin-bottom: 40px;
 }
+
+/* Tablas */
 table {
   width: 100%;
   border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
 }
 th, td {
-  padding: 10px;
-  border: 1px solid #fff;
+  padding: 15px;
+  border: 1px solid #666;
+  text-align: center;
 }
+
+/* Galería */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 .galeria img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   height: 200px;
   object-fit: cover;
   transition: transform 0.3s ease;
@@ -64,46 +115,58 @@ th, td {
 .galeria img:hover {
   transform: scale(1.05);
 }
+
+/* Entrenadores */
 .entrenadores {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
 }
 .entrenador {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 10px;
-  max-width: 300px;
+  width: 280px;
   text-align: center;
-  opacity: 0;
-  transform: translateY(30px);
-}
-.entrenador.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 .entrenador img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   height: 200px;
   object-fit: cover;
 }
+.entrenador h3 {
+  margin: 10px 0 5px;
+  color: #f0b400;
+}
+
+/* Listas y bloques */
 ul {
-  padding-left: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+ul li {
+  margin-bottom: 10px;
 }
 blockquote {
   font-style: italic;
-  background: rgba(255,255,255,0.1);
-  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
   border-left: 5px solid #f0b400;
-  margin: 10px 0;
+  margin: 20px auto;
+  max-width: 800px;
 }
+
+/* Footer */
 footer {
+  background: #000;
   text-align: center;
   padding: 20px;
-  background: #000;
+  font-size: 0.9em;
 }
+
+/* Botón WhatsApp */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -124,16 +187,22 @@ footer {
 .whatsapp-button:hover {
   transform: scale(1.1);
 }
+
+/* Redes sociales */
 .redes-sociales {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .redes-sociales a {
   color: #f0b400;
-  margin: 0 8px;
   text-decoration: none;
+  margin: 0 10px;
   font-weight: bold;
 }
+.redes-sociales a:hover {
+  text-decoration: underline;
+}
+
 
 
 
